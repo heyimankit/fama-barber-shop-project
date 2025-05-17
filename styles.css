@@ -1,0 +1,73 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.heading {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'%3E%3Crect width='800' height='600' fill='%23333333'/%3E%3Cpath d='M400 150 C 350 150, 300 200, 300 250 C 300 300, 350 350, 400 350 C 450 350, 500 300, 500 250 C 500 200, 450 150, 400 150 Z' fill='%23222222'/%3E%3Cpath d='M250 200 L 550 200 L 550 500 L 250 500 Z' fill='%23222222'/%3E%3Cpath d='M300 250 L 500 250 L 500 450 L 300 450 Z' fill='%23111111'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card {
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.02);
+}
+
+.gallery-img {
+    transition: all 0.3s ease;
+    filter: grayscale(30%);
+}
+
+.gallery-img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+}
+
+.btn-primary {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(234, 88, 12, 0.25);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #ea580c;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.scroll-to-top {
+    transition: all 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #c2410c;
+}
